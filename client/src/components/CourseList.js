@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const CourseList = props => {
     return (
@@ -18,11 +19,15 @@ const CourseList = props => {
                             <td>{ course.authorId }</td>
                             <td>{ course.category }</td>
                         </tr>
-                    )
+                    );
                 })}
             </tbody>
         </table>
     );
+};
+
+CourseList.propTypes = {
+    courses: PropTypes.array.isRequired
 };
 
 export default CourseList;
