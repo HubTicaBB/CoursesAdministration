@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const CourseList = props => {
     return (
-        <table className='table'>
+        <table className='table table-hover'>
             <thead>
                 <tr>
                     <th>Title</th>
