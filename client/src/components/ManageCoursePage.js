@@ -4,7 +4,9 @@ import CourseForm from './CourseForm';
 const ManageCoursePage = props => {
     return (
         <>
-            <h2>Manage Course</h2>
+            <div className='jumbotron'>
+                <h1>Manage Course</h1>
+            </div>
             <CourseForm />
         </>
     );

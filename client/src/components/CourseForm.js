@@ -2,7 +2,7 @@ import React from 'react';
 
 const CourseForm = props => {
     return (
-        <form className='container jumbotron'>
+        <form className='container'>
             <div className='form-group'>
                 <label htmlFor='title'>Title</label>
                 <div className='field'>

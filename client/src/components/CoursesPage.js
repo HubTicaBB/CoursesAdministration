@@ -12,8 +12,10 @@ const CoursesPage = () => {
 
     return (
         <>
-            <h2>Courses</h2>
-            <Link to='/course' className='btn btn-success mt-2 mb-5'>Add new course</Link>
+            <div className='jumbotron'>
+                <h1>Courses</h1>
+                <Link to='/course' className='btn btn-success mt-2'>Add new course</Link>
+            </div>
             <CourseList courses={ courses } />
         </>
     );

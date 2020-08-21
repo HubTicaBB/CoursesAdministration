@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const CourseList = props => {
     return (
         <table className='table table-hover'>
-            <thead>
+            <thead className='bg-secondary text-light'>
                 <tr>
                     <th>Title</th>
                     <th>Author ID</th>
