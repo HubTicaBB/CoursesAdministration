@@ -10,10 +10,10 @@ const ManageCoursePage = props => {
         category: ''
     });
 
-    const handleChange = event => {
+    const handleChange = ({ target }) => {
         const updatedCourse = { 
             ...course, 
-            [event.target.name]: event.target.value 
+            [target.name]: target.value 
         };
         setCourse(updatedCourse);
     };
