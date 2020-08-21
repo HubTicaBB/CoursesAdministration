@@ -10,7 +10,7 @@ const CourseForm = props => {
                         id='title'
                         type='text'
                         value={ props.course.title }
-                        onChange={ props.onTitleChange }
+                        onChange={ props.onChange }
                         name='title'
                         className='form-control'
                     />
@@ -23,7 +23,7 @@ const CourseForm = props => {
                     <select
                         id='author'
                         value={ props.course.authorId || '' }
-                        onChange={ props.onAuthorChange }
+                        onChange={ props.onChange }
                         name='authorId'
                         className='form-control'
                     >
@@ -41,7 +41,7 @@ const CourseForm = props => {
                         id='category'
                         type='text'
                         value={ props.course.category }
-                        onChange={ props.onCategoryChange }
+                        onChange={ props.onChange }
                         name='category'
                         className='form-control'
                     />

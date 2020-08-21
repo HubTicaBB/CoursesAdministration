@@ -10,18 +10,11 @@ const ManageCoursePage = props => {
         category: ''
     });
 
-    const handleTitleChange = event => {
-        const updatedCourse = { ...course, title: event.target.value };
-        setCourse(updatedCourse);
-    };
-
-    const handleAuthorChange = event => {
-        const updatedCourse = { ...course, authorId: event.target.value };
-        setCourse(updatedCourse);
-    };
-
-    const handleCategoryChange = event => {
-        const updatedCourse = { ...course, category: event.target.value };
+    const handleChange = event => {
+        const updatedCourse = { 
+            ...course, 
+            [event.target.name]: event.target.value 
+        };
         setCourse(updatedCourse);
     };
 
@@ -32,9 +25,7 @@ const ManageCoursePage = props => {
             </div>
             <CourseForm 
                 course={ course } 
-                onTitleChange={ handleTitleChange } 
-                onAuthorChange={ handleAuthorChange }            
-                onCategoryChange={ handleCategoryChange }
+                onChange={ handleChange }
             />
         </>
     );
