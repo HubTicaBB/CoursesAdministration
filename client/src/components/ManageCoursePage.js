@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CourseForm from './CourseForm';
 
-const ManageCoursePage = props => {
+const ManageCoursePage = () => {
     const [course, setCourse] = useState({
         id: null,
         slug: '',
