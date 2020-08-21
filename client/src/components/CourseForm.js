@@ -9,7 +9,8 @@ const CourseForm = props => {
                     <input 
                         id='title'
                         type='text'
-                        value=''
+                        value={ props.course.title }
+                        onChange={ props.onTitleChange }
                         name='title'
                         className='form-control'
                     />
@@ -21,8 +22,8 @@ const CourseForm = props => {
                 <div className='field'>
                     <select
                         id='author'
-                        value=''
-                        onChange={ props.onChange }
+                        value={ props.course.authorId || '' }
+                        onChange={ props.onAuthorChange }
                         name='authorId'
                         className='form-control'
                     >
@@ -39,7 +40,8 @@ const CourseForm = props => {
                     <input 
                         id='category'
                         type='text'
-                        value=''
+                        value={ props.course.category }
+                        onChange={ props.onCategoryChange }
                         name='category'
                         className='form-control'
                     />
